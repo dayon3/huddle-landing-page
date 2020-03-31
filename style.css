@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+:root {
+	--primary-pink: hsl(322, 100%, 66%);
+	--pale-cyan: hsl(193, 100%, 96%);
+	--dark-cyan: hsl(192, 100%, 9%);
+	--grayish-blue: hsl(208, 11%, 55%);
+	--font-primary: 'Open Sans', sans-serif;
+	--font-secondary: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	/* 1rem = 10px */
+}
+
+body {
+	font-family: var(--font-primary);
+}
+
+h1,
+h2 {
+	font-family: var(--font-secondary);
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	padding: 0 2rem;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 110rem;
+}
+
+header {
+	background-image: url('./images/bg-hero-desktop.svg');
+	background-size: cover;
+	background-position: center center;
+}
