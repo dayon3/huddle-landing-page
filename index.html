@@ -11,23 +11,29 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>
 			Frontend Mentor | Huddle landing page with alternating feature blocks
 		</title>
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div class="container">
-				<nav>
+				<nav class="header-nav flex">
 					<img src="./images/logo.svg" alt="logo" class="logo" />
 					<button class="btn btn-secondary">
 						Try It Free
 					</button>
 				</nav>
 
-				<div class="flex">
-					<div>
+				<div class="flex header-hero">
+					<div class="header-hero__info">
 						<h1>Build The Community Your Fans Will Love</h1>
 						<p>
 							Huddle re-imagines the way we build communities. You have a voice,
@@ -38,7 +44,9 @@
 							Get Started For Free
 						</button>
 					</div>
-					<img src="./images/illustration-mockups.svg" alt="mockups" />
+					<div class="header-hero__img">
+						<img src="./images/illustration-mockups.svg" alt="mockups" />
+					</div>
 				</div>
 			</div>
 		</header>
@@ -54,16 +62,20 @@
 							miss out on with a feedback form.
 						</p>
 					</div>
-					<img
-						src="./images/illustration-grow-together.svg"
-						alt="Grow Together"
-					/>
+					<div>
+						<img
+							src="./images/illustration-grow-together.svg"
+							alt="Grow Together"
+						/>
+					</div>
 				</div>
 				<div class="box flex">
-					<img
-						src="./images/illustration-flowing-conversation.svg"
-						alt="Flowing Conversations"
-					/>
+					<div>
+						<img
+							src="./images/illustration-flowing-conversation.svg"
+							alt="Flowing Conversations"
+						/>
+					</div>
 					<div class="box__info">
 						<h2>Flowing Conversations</h2>
 						<p>
@@ -82,13 +94,15 @@
 							your users can start chatting immediately.
 						</p>
 					</div>
-					<img src="./images/illustration-your-users.svg" alt="Your Users" />
+					<div>
+						<img src="./images/illustration-your-users.svg" alt="Your Users" />
+					</div>
 				</div>
 			</div>
 		</main>
 
-		<div class="container">
-			<div class="box">
+		<div class="container center">
+			<div class="box cta-box">
 				<h2>Ready To Build Your Community?</h2>
 				<button class="btn btn-primary btn-big">Get Started For Free</button>
 			</div>
@@ -96,49 +110,52 @@
 
 		<footer>
 			<div class="container">
-				<img src="./images/logo.svg" alt="logo" />
+				<img src="./images/logo-white.svg" alt="logo" />
 				<div class="flex">
+					<ul>
+						<li>
+							<i class="fas fa-map-marker-alt"></i>
+							<span>
+								Two Rivers Mall, <br />Central Business District, Westlands,
+								Nairobi, Kenya
+							</span>
+						</li>
+						<li>
+							<i class="fas fa-phone-alt"></i>
+							<span>+1-543-123-4567</span>
+						</li>
+						<li>
+							<i class="fas fa-mail-bulk"></i>
+							<span>example@huddle.com</span>
+						</li>
+					</ul>
+					<ul>
+						<li>About Us</li>
+						<li>What We Do</li>
+						<li>FAQ</li>
+					</ul>
+					<ul>
+						<li>Career</li>
+						<li>Blog</li>
+						<li>Contact Us</li>
+					</ul>
 					<div>
-						<ul>
+						<ul class="social-media">
 							<li>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua
-							</li>
-							<li>+1-543-123-4567</li>
-							<li>example@huddle.com</li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li>About Us</li>
-							<li>What We Do</li>
-							<li>FAQ</li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li>Career</li>
-							<li>Blog</li>
-							<li>Contact Us</li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li>
-								<a href="#"><i class="fas fa-twitter"></i></a>
+								<a class="circle" href="#"><i class="fab fa-facebook-f"></i></a>
 							</li>
 							<li>
-								<a href="#"><i class="fas fa-twitter"></i></a>
+								<a class="circle" href="#"><i class="fab fa-twitter"></i></a>
 							</li>
 							<li>
-								<a href="#"><i class="fas fa-twitter"></i></a>
+								<a class="circle" href="#"><i class="fab fa-instagram"></i></a>
 							</li>
 						</ul>
+						<p>
+							&copy; Copyright 2018 Huddle. All rights reserved.
+						</p>
 					</div>
 				</div>
-				<p>
-					&copy; Copyright 2018 Huddle. All rights reserved.
-				</p>
 			</div>
 		</footer>
 	</body>
