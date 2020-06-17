@@ -2,10 +2,12 @@
 
 :root {
 	--primary-pink: hsl(322, 100%, 66%);
+	--primary-pink-light: hsl(322, 100%, 75%);
 	--pale-cyan: hsl(193, 100%, 96%);
 	--dark-cyan: hsl(192, 100%, 9%);
 	--grayish-blue: hsl(208, 11%, 55%);
-	--color-white: #fff;
+	--color-white: hsl(0, 0%, 100%);
+	--color-black: hsl(0, 0%, 0%);
 	--font-primary: 'Open Sans', sans-serif;
 	--font-secondary: 'Poppins', sans-serif;
 }
@@ -79,8 +81,6 @@ img {
 	cursor: pointer;
 	text-transform: capitalize;
 	padding: 1rem 5rem;
-	background: var(--color-white)
-		linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
 	border: none;
 	border-radius: 5rem;
 	box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5);
@@ -97,9 +97,24 @@ img {
 	color: var(--color-white);
 }
 
+.btn-primary:hover {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.btn-secondary {
+	background: var(--color-white)
+		linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
+}
+
+.btn-secondary:hover {
+	background-color: var(--primary-pink);
+	color: var(--color-white);
+}
+
 .header {
 	background: url('./images/bg-hero-desktop.svg') center/ cover no-repeat;
-	height: 80vh;
+	height: 90vh;
 	width: 100%;
 	background-color: var(--pale-cyan);
 	padding: 4rem 0;
